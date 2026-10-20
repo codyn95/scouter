@@ -7,12 +7,12 @@ void checkSerial() {
         if (input.equals("R")) {
             // Rotate the damn screen
             Serial.println("Rotating screen");
-            display.rotate();
+            displayRotate();
         }
     }
 }
 
 void initHardware() {
     Serial.println("Initialize hardware");
-    display.init();
+    displayInit();
 }
